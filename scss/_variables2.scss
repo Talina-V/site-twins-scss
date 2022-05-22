@@ -1,0 +1,68 @@
+
+// $colorNavHeader: #4f2740;
+// $colorTextHeader: #d5dbe2;
+// $colorBtnHeader: #8e81a1;
+// $colorSmallText: #554752;
+// $colorReviews: #8a6f8d; 
+// $colorBgReviewsWraper: #caa2cb;
+
+// $colorBgData: #9f86a2;
+// $colorInput: #6b596a;
+// $cologTextInput: #573250;
+
+// $colorFooterBg: #5d3d85;
+// $colorFooterTextBlack: #4f0a5e;
+// $colorFooterTextLight: #8344d1;
+// $colorFooterTextLight2: #b965fe;
+
+$FontSourse: 'Source Sans Pro', sans-serif;
+$FontHint: 'Hind', sans-serif;
+$FontFresca: 'Fresca', sans-serif;
+
+$colorNavHeader: #4f2740;
+$colorTextHeader: #d5dbe2;
+$colorBtnHeader: #8e81a1;
+$colorSmallText: #69395e;
+$colorHeaderCardText: #9f86b7;
+$colorReviewsTextHeader: #caa2cb;
+$colorReviews: #8a6f8d; 
+$colorBgReviewsWraper: #caa2cb;
+$colorReviewsText: #fff;
+$colorBgData: #9f86a2;
+$colorDataTextHeader: #4e285b;
+$colorDataText: #8595a2;
+$colorInput: #31262c;
+$cologTextInput: #757575;
+$colorFooterBg: #3d5585;
+$colorFooterTextBlack: #0a2764;
+$colorFooterTextLight: #467ade;
+$colorFooterTextLight2: #659afe;
+$colorFooterBtn: #ffffff;
+
+$map-colors: (
+	nav: $colorNavHeader ,
+    textHeader: $colorTextHeader ,
+	button: $colorBtnHeader ,
+	smallText: $colorSmallText ,
+    headerCardText: $colorHeaderCardText ,
+    reviewsTextHeader: $colorReviewsTextHeader ,
+    bgReviewsWraper: $colorReviews ,
+    bgReviews: $colorBgReviewsWraper ,
+    reviewsText: $colorReviewsText ,
+    bgData: $colorBgData , 
+    dataTextHeader: $colorDataTextHeader ,
+    dataText: $colorDataText ,
+    input: $colorInput ,
+    textInput: $cologTextInput ,
+    footerBg: $colorFooterBg ,
+    footerTextBlack: $colorFooterTextBlack ,
+    footerTextLight: $colorFooterTextLight ,
+    footerTextLight2: $colorFooterTextLight2 , 
+    footerBtn: $colorFooterBtn
+);
+
+$background-image: url(../img/4.jpg);
+
+$backgroundImgOne: url("../img/5.jpeg");
+$backgroundImgTwo: url("../img/6.jpg");
+$backgroundImgThree: url("../img/7.jpg");

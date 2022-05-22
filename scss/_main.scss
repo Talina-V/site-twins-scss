@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Fresca&family=Hind:wght@300&family=Source+Sans+Pro:wght@300&display=swap');
+
+@mixin imgCard {
+    width: 300px;
+    height: 300px;
+    flex: 1 0 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin fofms {
+    border: none;
+    border-bottom: 1px solid $colorInput;
+    background: transparent;
+    color: $colorInput;
+}
+
+@mixin nav-footer { 
+    li {
+        list-style: none;
+        a {
+            text-decoration: none;
+            color: $colorFooterTextLight;
+        }
+    }
+}
+
+@mixin footer-text-header {
+    color: $colorFooterTextLight2;
+    font-weight: bold;
+}
+
+body {
+	background: map-get($map-colors, background);
+    margin: 0 auto;
+    header {
+        padding: 50px;
+        background: $background-image top no-repeat;
+        background-size: cover;
+        height: 600px;
+        border-radius:0 50% 50% 0;
+        .text-header {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding-top: 150px;
+            .p-text-header {
+                font-family: $FontHint;
+                font-size: 40px;
+                font-weight: 300;
+                color: $colorTextHeader;
+            }
+        }
+        .btn {
+            display: flex;
+            align-items: center;
+            text-align: center; 
+            justify-content: center;                
+            .header-btn {
+                width: 130px;
+                height: 50px;
+                border-radius: 0;
+                border: 1px solid $colorBtnHeader;
+                background-color: transparent;
+                align-items: center;
+                text-align: center; 
+                color: $colorBtnHeader;                
+            }
+        }
+        .main-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center; 
+            ul {
+                display: flex;
+                padding: 0px;
+                justify-content: center;
+                li {
+                    list-style: none;
+                    padding-right: 40px;
+                    a {
+                        color: $colorNavHeader;
+                        text-decoration: none;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }   
+    }
+    .card {
+        margin: auto; 
+        .heading-card-text { 
+			text-align:center;
+			font-weight: 900;
+            h2 {
+                text-align:center;
+                font-family: $FontHint;
+                font-size: 40px;
+                font-weight: 300;
+            }
+        }
+        .card-wrap-container {
+            margin: auto;
+            max-width: 1000px;
+            .card-wrap {
+                box-shadow: 0px 0px 12px 0px rgba(61, 55, 61, 0.7);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 50px 15px;
+                .img-one {
+                    background: $backgroundImgOne; 
+                    @include imgCard;
+                }
+                .img-two {
+                    background: $backgroundImgTwo; 
+                    @include imgCard;
+                }
+                .img-three {
+                    background: $backgroundImgThree; 
+                    @include imgCard;
+                }
+                .card-heading-text {
+                    font-size: 30px;
+                    font-family: $FontHint;
+                    color: $colorHeaderCardText;
+                    margin-bottom: 0;
+                    padding: 0 15px 0 15px;
+                }
+                .card-text {
+                    color: $colorSmallText;
+                    padding: 0 15px 0 15px;
+                    margin: 0 0 15px 0;
+                }
+            }
+          
+        }
+    }
+    .reviews {
+        max-width: 1200px;
+        background:$colorReviews;
+        margin: 0 auto;
+        .reviews-text-header {
+            display: flex;
+            margin: 0 auto;
+            text-align:center;
+            justify-content: center;
+            .reviews-text-header-h2 {
+                color: $colorReviewsTextHeader;
+                font-family: $FontSourse;
+                font-weight: normal;
+            } 
+        }
+            .parent-container-reviews {
+            display:flex;           
+            .contant-reviews {
+                display:flex;
+                width: 33%;
+                margin: 15px;
+                background: $colorBgReviewsWraper;         
+                .reviews-img {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 100px; 
+                    border: 3px;
+                    padding: 15px;
+                }
+                .reviews-text {
+                    margin: 0 auto;
+                    padding: 10px;
+                    align-items: center;
+                    justify-content: center;
+                    color: $colorReviewsText;
+                }
+                .sigature {
+                    font-style: italic;
+                }                             
+            }
+        }
+    }
+
+    .form-container {
+        background: $colorBgData;
+        max-width: 800px;
+        padding-bottom: 20px;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 25px;
+        
+        .input {
+            @include fofms;
+            }
+        }
+        .input-passangers {
+            @include fofms;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        .form-text {
+            display: flex;
+            margin: 0 auto;
+            text-align:center;
+            justify-content: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            color: $cologTextInput;
+            .color-data-text-header {
+                font-family: $FontSourse;
+                font-weight: normal;
+                color: $colorDataTextHeader;
+            }
+        }
+        .form-wrap {
+            display: flex;
+            justify-content: center;
+            text-align:center;
+        }
+
+        .footer {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 300px;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            background: $colorFooterBg;
+            padding-right: 30px;
+            padding-left: 30px;
+            } 
+            .section-footer-1 { grid-area: 1 / 1 / 2 / 2; 
+                .footer-text-header {
+                    @include footer-text-header;
+                }
+                .social-img {
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 15px;
+                }
+                .copy {
+                    color: $colorFooterTextBlack;
+                }
+            }
+            .section-footer-2 { 
+                grid-area: 1 / 2 / 2 / 3; 
+                .footer-text-header {
+                    @include footer-text-header;
+                }
+                @include nav-footer;
+            }
+
+            .section-footer-3 { 
+                grid-area: 1 / 3 / 2 / 4; 
+                .footer-text-header {
+                    @include footer-text-header;
+                }
+                .nav-footer {
+                    @include nav-footer;
+                }
+            }
+
+            .section-footer-4 { 
+                grid-area: 1 / 4 / 2 / 5; 
+                width: 450px;
+                .footer-text-header {
+                    @include footer-text-header;
+                }
+                .input-footer {
+                    width: 450px;
+                    height: 30px; 
+                    margin-bottom: 10px;
+                }
+                .btn-send {
+                    width: 457px;
+                    height: 37px;
+                    background: $colorFooterTextBlack;
+                    color: $colorFooterBtn;
+                    border: none; 
+                    outline: none;
+                }
+                .viza-img {
+                    width: 50px;
+                    height: 40px;
+                    margin-right: 15px;
+                }
+                .mc-img {
+                    width: 45px;
+                    height: 30px;
+                    margin-right: 15px;   
+                }
+                .p24-img {
+                    width: 45px;
+                    height: 45px;
+                    margin-right: 15px;
+                    
+                }
+                .gp-img {
+                    width: 50px;
+                    height: 30px;
+                    margin-right: 15px;
+                 
+                }
+            }
+    }   
+
+
+

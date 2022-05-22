@@ -1,0 +1,51 @@
+$FontSourse: 'Source Sans Pro', sans-serif;
+$FontHint: 'Hind', sans-serif;
+$FontFresca: 'Fresca', sans-serif;
+
+$colorNavHeader: #c1d1df;
+$colorTextHeader: #dddddd;
+$colorBtnHeader: #808080;
+$colorSmallText: #395369;
+$colorHeaderCardText: #86a2c3;
+$colorReviewsTextHeader: #cba2b0;
+$colorReviews: #8c6f79; 
+$colorBgReviewsWraper: #9e7a86;
+$colorReviewsText: #f3e6ee;
+$colorBgData: #8595a2;
+$colorDataTextHeader: #c1d1db;
+$colorDataText: #8595a2;
+$colorInput: #6b7b87;
+$cologTextInput: #acbcc9;
+$colorFooterBg: #3d5585;
+$colorFooterTextBlack: #0a2764;
+$colorFooterTextLight: #467ade;
+$colorFooterTextLight2: #659afe;
+$colorFooterBtn: #ffffff;
+
+$map-colors: (
+	nav: $colorNavHeader ,
+    textHeader: $colorTextHeader ,
+	button: $colorBtnHeader ,
+	smallText: $colorSmallText ,
+    headerCardText: $colorHeaderCardText ,
+    reviewsTextHeader: $colorReviewsTextHeader ,
+    bgReviewsWraper: $colorReviews ,
+    bgReviews: $colorBgReviewsWraper ,
+    reviewsText: $colorReviewsText ,
+    bgData: $colorBgData , 
+    dataTextHeader: $colorDataTextHeader ,
+    dataText: $colorDataText ,
+    input: $colorInput ,
+    textInput: $cologTextInput ,
+    footerBg: $colorFooterBg ,
+    footerTextBlack: $colorFooterTextBlack ,
+    footerTextLight: $colorFooterTextLight ,
+    footerTextLight2: $colorFooterTextLight2 ,
+    footerColorBtn: $colorFooterBtn ,
+);
+
+$background-image: url(../img/0.jpg);
+
+$backgroundImgOne: url("../img/1.jpg");
+$backgroundImgTwo: url("../img/2.jpg");
+$backgroundImgThree: url("../img/3.jpg");
